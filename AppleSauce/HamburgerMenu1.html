@@ -1,0 +1,108 @@
+<html>
+
+<head>
+<style type="text/css">
+body{
+	background-color:#808080;
+}
+img {
+	border-radius: 50%;
+	width: 30px;
+}
+
+#sub1 {
+	display:none;
+	padding-left: 5%;
+}
+
+#sub2 {
+	display:none;
+	padding-top: -10px;
+}
+#form1
+{	display:none;
+	padding-left:10%;
+}
+
+#FPw{	border:solid;
+		border-width: 1px 2px 2px 2px;
+}
+#FUn{	border:solid;
+		border-width: 2px 2px 1px 2px;
+}
+#FEm
+{
+	border:solid;
+		border-width:2px;
+}
+#form2{
+	display:none;
+}
+</style>
+
+<script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+$("#main").click(function() {
+	$("#sub1").show("fast");
+});
+$("#main").dblclick(function() {
+	$("#sub1").hide("fast");
+});
+$("#main").click(function() {
+	$("#sub2").show("fast");
+});
+$("#main").dblclick(function() {
+	$("#sub2").hide("fast");
+});
+$("#sub1").click(function(){
+	$("#form1").show("fast");
+});
+$("#sub1").dblclick(function(){
+	$("#form1").hide("fast");
+});
+$("#sub2").click(function(){
+	$("#form2").show("fast");
+});
+$("#sub2").dblclick(function(){
+	$("#form2").hide("fast");
+});
+$("#main").dblclick(function() {
+	$("#form1").hide("fast");
+});
+$("#main").dblclick(function() {
+	$("#form2").hide("fast");
+});
+
+</script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="main">
+			<img src="https://thumb.ibb.co/jMLpdv/32x32.png" alt="32x32" border="0">
+		</div>
+		<div id="sub1">
+			<img src="https://thumb.ibb.co/m8uFJv/login_lock.png" alt="login_lock" border="0">
+		</div>
+		<div id="sub2">
+			<img src="https://image.ibb.co/kjjnWF/Idea_Icon.png" alt="Idea_Icon" border="0">
+		</div>
+		<div id="form1">
+			<form>
+				<input id="FUn" name="name" type="text" placeholder="Username" / required="true"><br/>
+				<input id="FPw" name="pword" type="password" placeholder="Password" required="true" /><br/>
+				<input type="submit" style="font-size:7pt;color:white;background-color:green;border:2px solid #336600;padding:3px;" value="Edit" /><br/>
+			</form>
+		</div>
+		<div id="form2">
+			<form>
+				<input id="FEm" name="email" type="email" placeholder=" example@somesite.com" / required="true"><br/>
+				<textarea name="comments" rows="5" cols="25"></textarea>
+				</br>
+				<input type="submit" style="font-size:7pt;color:white;background-color:green;border:2px solid #336600;padding:3px;" value="submit" /><br/>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
